@@ -8,7 +8,6 @@ import { ClassesComponent } from './classes/classes.component';
   declarations: [
     AppComponent,
     ClassesComponent
-
   ],
   imports: [
     BrowserModule
