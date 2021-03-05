@@ -13,34 +13,32 @@
             </tr>
         </thead>
         <tbody *ngFor="let c of classes">
-            <!--
-                6'th task, added green background to table rows
-                if isgreen is true
-            -->
+<!--
+    6'th task, added green background to table rows
+    if isgreen is true
+-->
             <tr *ngIf="c.teachers.length>0" [ngClass]="{'green' : (isgreen == true)}">
                 <td>{{ c.name }}</td>
-                <!--
-                    4'th task, i added a pipe to display 
-                    name of the students with uppercase
-                -->
+<!--
+    4'th task, i added a pipe to display 
+    name of the students with uppercase
+-->
                 <td *ngFor="let s of c.students">{{ s.name | uppercase}}</td>
                 <td *ngFor="let t of c.teachers">{{ t.name }}</td>     
             </tr>
         </tbody>
     </table>
-    <!--
-        5'th task, added button for delete first class
-    -->
+<!--
+    5'th task, added button for delete first class
+-->
     <button (click)="deleteFirstClass()">Delete First Class</button>
-    
-    <!--
-        6'th task, i added a button to reset color
-    -->
+<!--
+    6'th task, i added a button to reset color
+-->
     <button (click)="resetColor()">Reset color</button>
 <!--
     3'rd task
--->
-    
+-->  
     <h3>Filtered array</h3>
     <table class="table">
         <thead>
