@@ -7,6 +7,7 @@ import { ParentComponent } from './parent/parent.component';
 import { FirstChildComponent } from './first-child/first-child.component';
 import { SecondChildComponent } from './second-child/second-child.component';
 
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { SecondChildComponent } from './second-child/second-child.component';
     SecondChildComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
