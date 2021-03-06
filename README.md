@@ -8,4 +8,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Verification of each feature
 In app.component.html change what component to be displayed. 
-EX: <app-classes></app-classes>
+EX: `<app-classes></app-classes>`
